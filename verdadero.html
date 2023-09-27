@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de Datos de Clientes</title>
+    <link rel="stylesheet" href="stiles.css">
+    <div class="container">
+        <h1>Ingreso de Datos de Clientes</h1>
+        <button onclick="ingresarDatos()">Ingresar Datos</button>
+    </div>
+    
+    <script type="text/javascript">
+        function ingresarDatos() {
+            var nombre = prompt("Ingrese su nombre");
+            var email = prompt("Ingrese su correo electrónico");
+            var telefono = prompt("Ingrese su número de teléfono");
+
+            if (nombre && email && telefono) {
+                const mensaje = `Cliente registrado: Nombre: ${nombre}, Correo Electrónico: ${email}, Teléfono: ${telefono}`;
+                alert(mensaje);
+            } else {
+                alert("Por favor, complete todos los campos.");
+            }
+        }
+    </script>
+</head>
+</html>
